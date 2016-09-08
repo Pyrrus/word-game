@@ -2,7 +2,7 @@ import java.util.Random;
 import java.io.Console;
 
 public class Game {
-  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian"};
+  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian", "java", "ruby", "r", "waffle", "nyarlathotep"};
 
   private String hideWord;
 
@@ -14,7 +14,7 @@ public class Game {
 
   public Game() {
     Random randomGenerator = new Random();
-    int randomInt = randomGenerator.nextInt(5);
+    int randomInt = randomGenerator.nextInt(10);
     word = words[randomInt];
     counter = 1;
     game = true;
