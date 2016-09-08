@@ -25,13 +25,13 @@ public class App {
     Game game = new Game();
 
     while (in) {
-      String guess = console.readLine("Guess the word: " + game.getHide() + ": ");
+      String guess = console.readLine("You have as many tries as there are letters in the word\n" + "hint: " + game.getHint() + "\nThe length of the word is: " + game.getHide().length() + "\n" + "Guess the word:" + game.getHide() + ": ");
       in = game.update(guess);
     }
 
     if (game.getWord().equals(game.getHide())) {
       System.out.println("You win the game: " + game.getWord());
-      System.out.println(output);
+      System.out.println(output + "You Win!");
     } else {
       System.out.println(output2);
       System.out.println("You fail the game.\nThe word is " + game.getWord());

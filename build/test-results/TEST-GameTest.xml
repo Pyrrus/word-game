@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-09-08T21:44:43" hostname="epicodus-8.local" time="0.002">
+<testsuite name="GameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-09-08T22:52:24" hostname="epicodus-8.local" time="0.003">
   <properties/>
-  <testcase name="runGame_instantiatesCorrectly" classname="GameTest" time="0.001"/>
+  <testcase name="runGame_instantiatesCorrectly" classname="GameTest" time="0.002"/>
   <testcase name="runGame_updateAndPlayWholeWord" classname="GameTest" time="0.0"/>
   <testcase name="runGame_updateAndPlayletters_1" classname="GameTest" time="0.0"/>
   <testcase name="runGame_returnHide" classname="GameTest" time="0.0"/>

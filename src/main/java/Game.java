@@ -2,11 +2,15 @@ import java.util.Random;
 import java.io.Console;
 
 public class Game {
-  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian", "java", "ruby", "r", "waffle", "nyarlathotep"};
+  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian", "java", "ruby", "r", "waffles", "nyarlathotep"};
+
+  private String[] hints = {"bijon fraise all the way", "maine coone's are the coolest", "over your head", "where the heart is", "a poet who loves to use big words in his poetry", "programming language", "programming language", "programming language", "goes well with chicken", "just give up, seriously, it's the black pharaoh"};
 
   private String hideWord;
 
   private String word;
+
+  private String hint;
 
   private boolean game;
 
@@ -16,6 +20,7 @@ public class Game {
     Random randomGenerator = new Random();
     int randomInt = randomGenerator.nextInt(10);
     word = words[randomInt];
+    hint = hints[randomInt];
     counter = 1;
     game = true;
     this.hide();
@@ -61,6 +66,10 @@ public class Game {
 
   public String getWord() {
     return word;
+  }
+
+  public String getHint() {
+    return hint;
   }
 
   public String getHide() {
