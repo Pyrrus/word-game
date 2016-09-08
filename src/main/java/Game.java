@@ -2,9 +2,9 @@ import java.util.Random;
 import java.io.Console;
 
 public class Game {
-  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian", "java", "ruby", "r", "waffles", "nyarlathotep"};
+  private String[] words = {"dog", "cat", "hat", "home", "sesquipedalian", "java", "ruby", "r", "waffles", "nyarlathotep", "blue","time", "kiet", "adam"};
 
-  private String[] hints = {"bijon fraise all the way", "maine coone's are the coolest", "over your head", "where the heart is", "a poet who loves to use big words in his poetry", "programming language", "programming language", "programming language", "goes well with chicken", "just give up, seriously, it's the black pharaoh"};
+  private String[] hints = {"bijon fraise all the way", "maine coone's are the coolest", "over your head", "where the heart is", "a poet who loves to use big words in his poetry", "programming language", "programming language", "programming language", "goes well with chicken", "just give up, seriously, it's the black pharaoh","you're my boy!","we have so little of it.", "the person you love most in the world", "Kiet's hero"};
 
   private String hideWord;
 
@@ -18,7 +18,7 @@ public class Game {
 
   public Game() {
     Random randomGenerator = new Random();
-    int randomInt = randomGenerator.nextInt(10);
+    int randomInt = randomGenerator.nextInt(words.length);
     word = words[randomInt];
     hint = hints[randomInt];
     counter = 1;
